@@ -19,6 +19,26 @@
             background-color: #03254c;
             color: #CCCCCC;
         }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #011327;
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #010b17;
+        }
     </style>
 </head>
 
@@ -26,36 +46,39 @@
     <div class="container text-center">
         <h1 class="my-5">Trial Projects</h1>
         <hr>
-        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center my-3">
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center py-5">
             <div class="col">
-                <div class="card h-100 bluebg" style="box-shadow: 0 2px 15px #577da8;">
+                <div class="card h-100 bluebg" style="box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);;">
                     <img src="images/ipaddressfetcher.jpg" class="card-img-top" alt="IP Address Fetcher">
                     <div class="card-body">
                         <h5 class="card-title my-1">IP Address Fetcher</h5>
-                        <a class="btn btn-outline-primary my-2" href="ipaddressfetcher.html" role="button">Visit Site</a>
+                        <a class="btn btn-outline-primary my-2" href="ipaddressfetcher.html" role="button">Visit
+                            Site</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 bluebg" style="box-shadow: 0 2px 15px #577da8;">
+                <div class="card h-100 bluebg" style="box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);">
                     <img src="images/palindromechecker.jpg" class="card-img-top" alt="Palindrome Checker">
                     <div class="card-body">
                         <h5 class="card-title my-1">Palindrome Checker</h5>
-                        <a class="btn btn-outline-primary my-2" href="palindromechecker.html" role="button">Visit Site</a>
+                        <a class="btn btn-outline-primary my-2" href="palindromechecker.html" role="button">Visit
+                            Site</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 bluebg" style="box-shadow: 0 2px 15px #577da8;">
+                <div class="card h-100 bluebg" style="box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);">
                     <img src="images/rgbcolorgenerator.jpg" class="card-img-top" alt="Palindrome Checker">
                     <div class="card-body">
                         <h5 class="card-title my-1">RGB Color Generator</h5>
-                        <a class="btn btn-outline-primary my-2" href="rgbcolorgenerator.html" role="button">Visit Site</a>
+                        <a class="btn btn-outline-primary my-2" href="rgbcolorgenerator.html" role="button">Visit
+                            Site</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100 bluebg" style="box-shadow: 0 2px 15px #577da8;">
+                <div class="card h-100 bluebg" style="box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);">
                     <img src="images/counter.jpg" class="card-img-top" alt="Palindrome Checker">
                     <div class="card-body">
                         <h5 class="card-title my-1">Counter Application</h5>
@@ -63,8 +86,40 @@
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="card h-100 bluebg" style="box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);">
+                    <img src="images/asciiunicode.jpg" class="card-img-top" alt="ASCII/UNICODE Character Detector">
+                    <div class="card-body">
+                        <h5 class="card-title my-1">ASCII/UNICODE Character Detector</h5>
+                        <a class="btn btn-outline-primary my-2" href="ascii-unicode.html" role="button">Visit Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 bluebg" style="box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);">
+                    <img src="images/clock.jpg" class="card-img-top" alt="Clock">
+                    <div class="card-body">
+                        <h5 class="card-title my-1">Analog Clock</h5>
+                        <a class="btn btn-outline-primary my-2" href="clock.html" role="button">Visit Site</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!--Footer-->
+    <footer class="bg-dark text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #011327">
+            Copyright © 2023 Megh Patel. All rights reserved.
+        </div>
+        <div class="text-center p-2" style="background-color: #010b17">
+            <sub>Made with &#10084; by <a
+                    onclick="window.open('https://megh2711.github.io/meghthebaadal.com/','_blank')"
+                    style="text-decoration: none; color: #fff;"><b>Megh
+                        Patel</b></a></sub>
+        </div>
+        <!-- Copyright -->
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
