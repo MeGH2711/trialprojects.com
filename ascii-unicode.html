@@ -38,7 +38,8 @@
                 <div class="card-body">
                     <h3 class="card-title fw-bold my-2">ASCII & UNICODE CHARACTER DETECTOR</h3>
                     <div class="my-3">
-                        <input type="text" maxlength="1" class="form-control" id="inputText" placeholder="Enter a CHARACTER">
+                        <input type="text" maxlength="1" class="form-control" id="inputText"
+                            placeholder="Enter a CHARACTER">
                     </div>
                     <button class="btn btn-primary my-2" onclick="detectCharacter()">Detect</button>
                     <p class="my-2" id="result">Result of the entered character</p>
@@ -46,23 +47,37 @@
             </div>
         </div>
     </div>
+    <!--Footer-->
+    <footer class="bg-dark text-center text-white">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #011327">
+            Copyright © 2023 Megh Patel. All rights reserved.
+        </div>
+        <div class="text-center p-2" style="background-color: #010b17">
+            <sub>Made with &#10084; by <a
+                    onclick="window.open('https://megh2711.github.io/meghthebaadal.com/','_blank')"
+                    style="text-decoration: none; color: #fff;"><b>Megh
+                        Patel</b></a></sub>
+        </div>
+        <!-- Copyright -->
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <script>
-        function detectCharacter(){
+        function detectCharacter() {
             const characterInput = document.getElementById("inputText");
             const result = document.getElementById("result");
 
             const character = characterInput.value;
-            if (isASCII(character)){
-            result.innerText = 'The entered character is an ASCII character'
-            }else{
+            if (isASCII(character)) {
+                result.innerText = 'The entered character is an ASCII character'
+            } else {
                 result.innerText = 'The entered character is an Unicode character'
             }
         }
-        function isASCII(character){
-            return character.charCodeAt(0)<=127
+        function isASCII(character) {
+            return character.charCodeAt(0) <= 127
         }
     </script>
 </body>
